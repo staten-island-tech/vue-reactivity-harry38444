@@ -32,14 +32,14 @@ const ingredients = [
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnLGMKyA9fQFU5TTuQK9HjEeQmZMBR0wRitA&usqp=CAU",
   },
   {
-    name: "",
+    name: "Spinnach",
     price: 1,
-    img: "",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcWIIcQ-uZWbbtkjFQN4EzJvO3FTbt6TrvOw&usqp=CAU",
   },
   {
-    name: "",
-    price: 1,
-    img: "",
+    name: "Ranch",
+    price: 2,
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz5vZQgZBsh0AOwII_wl84XxrHv7TuqlJ-2A&usqp=CAU",
   },
 ];
 </script>

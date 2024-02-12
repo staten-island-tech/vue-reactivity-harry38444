@@ -1,6 +1,7 @@
+
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div class="Checkout">
+    <h1>This is the checkout</h1>
   </div>
 </template>
 
