@@ -5,7 +5,7 @@
   </div>
 </template>
 <script>import { reactive } from "vue";
-export const Price = reactive({
+export const clicked = reactive({
   count: 0,
 });
 </script>

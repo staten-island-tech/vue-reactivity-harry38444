@@ -1,9 +1,10 @@
+
 <template>
   <div>
     <h2>{{ Ingredient.name }}</h2>
     <img :src="Ingredient.img" alt="" />
     <h3>{{ clicked }}</h3>
-    <button @clicked="Price">{{ clicked.value }}>Click Me</button>
+    <button @click="increment">Click Me</button>
   </div>
 </template>
 
@@ -14,9 +15,11 @@ const props = defineProps({
 });
 
 //clicker logic
-let clicked = ref(0);
-function Price() {
+let clicked = ref(0)
+function increment() {
+  
   clicked.value++;
+
 }
 </script>
 
