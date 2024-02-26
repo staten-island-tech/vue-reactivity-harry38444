@@ -41,7 +41,12 @@ const ingredients = [
     price: 2,
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz5vZQgZBsh0AOwII_wl84XxrHv7TuqlJ-2A&usqp=CAU",
   },
-];
+  {
+    name: "Avocado",
+    price: 1,
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLXZ98VkGlLbMr3z3tquOEXyX3505iZ6cFsg&usqp=CAU",
+  },
+  ];
 </script>
 
 <style scoped></style>
