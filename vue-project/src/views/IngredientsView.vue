@@ -36,16 +36,24 @@ const ingredients = [
     price: 1,
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcWIIcQ-uZWbbtkjFQN4EzJvO3FTbt6TrvOw&usqp=CAU",
   },
-  {
-    name: "Ranch",
-    price: 2,
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz5vZQgZBsh0AOwII_wl84XxrHv7TuqlJ-2A&usqp=CAU",
-  },
-  {
+    {
     name: "Avocado",
     price: 1,
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLXZ98VkGlLbMr3z3tquOEXyX3505iZ6cFsg&usqp=CAU",
   },
+  {
+    name: "Ranch",
+    price: 2,
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz5vZQgZBsh0AOwII_wl84XxrHv7TuqlJ-2A&usqp=CAU",
+
+
+    
+  }, {
+    name: "Balsamic Vinaigrette",
+    price: 2, 
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5UZ6pxsmvd-IRLCJ6Q2H8C60IpLi9li4O2Q&usqp=CAU",
+  }
+
   ];
 </script>
 
