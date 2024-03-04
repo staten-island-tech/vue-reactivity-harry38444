@@ -1,32 +1,21 @@
-
 <template>
   <div>
-    <h2>{{ Ingredient.name }}</h2>
-    <img :src="Ingredient.img" alt="" />
-    <h3>{{ clicked }}</h3>
-    <button @click="increment">Click Me</button>
+    <h2>{{ ingredient.name }}</h2>
+    <img :src="ingredient.img" alt="" />
+    <button @click="addToCart(ingredient)">Add to Cart</button>
   </div>
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { defineProps, defineEmits } from "vue";
+
 const props = defineProps({
-  Ingredient: Object,
+  ingredient: Object,
 });
 
-//clicker logic
-let clicked = ref(0)
-function increment() {
-  
-  clicked.value++;
+const emit = defineEmits();
 
+function addToCart(ingredient) {
+  emit('addToCart', ingredient);
 }
 </script>
-
-<style scoped>
-img {
-  width: 250px;
-  height: 300px;
-  object-fit: cover;
-}
-</style>

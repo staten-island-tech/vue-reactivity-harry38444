@@ -1,22 +1,32 @@
+<script setup>
+import { ref } from "vue";
 
-<template>
-  <div class="Checkout">
-    <h1>This is the checkout</h1>
-  </div>
-</template>
-<script>import { reactive } from "vue";
-export const clicked = reactive({
-  count: 0,
-});
-</script>
+const cart = ref([
+]);
 
-
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
+function removeFromCart(index) {
+  cart.value[index].quantity--;
+  if (cart.value[index].quantity === 0) {
+    cart.value.splice(index, 1);
   }
 }
-</style>
+
+function calculateTotalPrice() {
+  return cart.value.reduce((total, item) => total + item.price * item.quantity, 0);
+}
+</script>
+
+<template>
+  <div class="cart">
+    <h2>Shopping Cart</h2>
+    <div v-if="cart.length === 0">Your cart is empty. 😟😞☹ invis cart?? </div>
+    <div v-else>
+      <div v-for="(ingredient, index) in cart" :key="index">
+    <img :src="ingredient.img" :alt="ingredient.name" width="500" height="500">
+    <div>{{ ingredient.name }} - {{ ingredient.price }}$ x {{ ingredient.quantity }}</div>
+    <button @click="removeFromCart(index)">Remove</button>
+</div>
+      <div>Total Price: {{ calculateTotalPrice() }}$</div>
+    </div>
+  </div>
+</template>

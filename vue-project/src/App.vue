@@ -19,7 +19,7 @@ import { RouterLink, RouterView } from "vue-router";
         <h1>Welcome! Click ingredients to start customizing your salad!</h1>
       </nav>
     </div>
-  </header>
+  </header> 
 
   <RouterView />
 </template>

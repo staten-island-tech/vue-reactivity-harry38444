@@ -1,15 +1,32 @@
 <template>
   <div>
-    <DestCard
-      v-for="ingredient in ingredients"
-      :key="ingredient.name"
-      :Ingredient="ingredient"
-    />
+    <div class="ingredients">
+      <DestCard
+        v-for="(ingredient, index) in ingredients"
+        :key="ingredient.name"
+        :ingredient="ingredient"
+        @addToCart="addToCart"
+      ></DestCard>
+    </div>
   </div>
 </template>
 
 <script setup>
-import DestCard from "@/components/DestCard.vue";
+import { ref } from "vue";
+import DestCard from '../components/DestCard.vue';
+
+const cart = ref([]);
+
+function addToCart(ingredient) {
+  const existingItemIndex = cart.value.findIndex(item => item.name === ingredient.name);
+  if (existingItemIndex !== -1) {
+    cart.value[existingItemIndex].quantity++;
+    console.log(cart.value)
+  } else {
+    cart.value.push({...ingredient, quantity: 1});
+    console.log(cart.value)
+  }
+}
 const ingredients = [
   {
     name: "Cucumbers",
@@ -56,5 +73,3 @@ const ingredients = [
 
   ];
 </script>
-
-<style scoped></style>
