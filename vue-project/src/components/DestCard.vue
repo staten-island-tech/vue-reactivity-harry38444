@@ -30,10 +30,11 @@ const emit = defineEmits();
   flex-direction: column;
   border: 1px solid #ccc;
   border-radius: 8px;
-  padding: 8px;
-  margin: 8px;
+  padding: 20px;
+  margin: 20px;
   background-color: #fff;
   width: 300px; 
+  height: 500px;
 }
 
 .image-container {
@@ -42,8 +43,8 @@ const emit = defineEmits();
 }
 
 .ingredient-image {
-  width: 17vw;
-  height: 20vh;
+  width: 90%;
+  height: 70%;
   border-radius: 8px;
 }
 

@@ -59,7 +59,7 @@ const ingredients = [
 .ingredient-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 10px;
   background-color:beige;
   border: 1px solid black;
   border-radius: 8px; 
