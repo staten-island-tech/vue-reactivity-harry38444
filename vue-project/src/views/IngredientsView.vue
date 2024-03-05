@@ -58,7 +58,7 @@ const ingredients = [
 <style scoped>
 .ingredient-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 10px;
   background-color:beige;
   border: 1px solid black;
